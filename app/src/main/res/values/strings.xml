@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie Menu</string>
+    <string name="order_by">Order by</string>
+    <string-array name="order_options">
+        <item>Most popular</item>
+        <item>Top rated</item>
+    </string-array>
+    <string name="user_rating">User rating: </string>
+    <string name="release_date">Release date: </string>
+    <string name="synopsis">Synopsis: </string>
+    <string name="error_message">Opss! Failed to get results.</string>
+    <string name="try_again"><u>Try again!</u></string>
+</resources>

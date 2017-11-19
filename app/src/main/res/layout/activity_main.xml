@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fsiq.android.moviemenu.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewElem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_error"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_error_message_display"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="120dp"
+            android:text="@string/error_message"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:id="@+id/tv_try_again"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="60dp"
+            android:text="@string/try_again"
+            android:onClick="tryAgain"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:id="@+id/pb_loading_indicator"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+    
+</FrameLayout>
